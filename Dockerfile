@@ -1,3 +1,6 @@
-FROM nginx
-COPY index.html /usr/share/nginx/html
-WORKDIR /usr/share/nginx/html
+FROM ubuntu
+
+RUN apt install apache2
+
+COPY ./index.html /
+
