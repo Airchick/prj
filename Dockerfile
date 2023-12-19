@@ -5,4 +5,4 @@ RUN apt-get update && \
 
 COPY ./index.html /var/www/html/index.html
 
-CMD ["httpd-foreground"]
+CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
